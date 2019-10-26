@@ -1,7 +1,3 @@
-.wrapper {
-  margin: 0 10%;
-}
-
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 320px;
 
@@ -30,7 +26,7 @@ $screen-xl-min: 1200px;
 
 // Large devices
 @mixin lg {
-  @media (min-width: #{$screen-lg-min}) {
+  @media (min-width: #{$screen-lg-min}) and (max-width: #{$screen-xl-min - 1}) {
     @content;
   }
 }

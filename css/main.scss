@@ -1,7 +1,12 @@
 @import "./globals/_colors.scss";
+@import "./globals/_global.scss";
 
 @import "./globals/_resolution.scss";
 
 @import "./pages/_home.scss";
+@import "./pages/_news.scss";
+@import "./pages/_article.scss";
 
 @import "./utils/_navbar.scss";
+@import "./utils/_header.scss";
+@import "./utils/_footer.scss";
