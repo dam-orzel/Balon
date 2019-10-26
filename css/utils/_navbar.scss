@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  .nav-item {
+    a {
+      font-size: 18px;
+      padding: 2px;
+      &.number {
+        color: $pink;
+        font-weight: 700;
+        border: 1px solid $pink;
+        border-radius: 30px;
+        padding-left: 50px;
+        position: relative;
+        margin-left: 10px;
+        .fa-phone-alt {
+          position: absolute;
+          top: -8px;
+          left: -5px;
+          font-size: 24px;
+          color: $white;
+          background: $pink;
+          padding: 13px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

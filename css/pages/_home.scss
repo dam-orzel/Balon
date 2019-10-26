@@ -1,0 +1,283 @@
+header {
+  background: url(../../img/headerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    background: $white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: $pink;
+    font-weight: normal;
+    width: fit-content;
+    margin: 0 20px;
+    @include sm {
+      font-size: 20px;
+      text-align: center;
+      padding: 15px 10px;
+    }
+    @include md {
+      font-size: 32px;
+      text-align: center;
+      padding: 15px 10px;
+    }
+  }
+}
+
+main {
+  h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 50px 0;
+    color: $pink;
+    font-weight: normal;
+  }
+  .main-title {
+    text-align: center;
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 0;
+      &:last-child {
+        margin-top: 20px;
+        margin-bottom: 100px;
+      }
+    }
+  }
+  .our-offer,
+  .news {
+    background: $greybg;
+    height: fit-content;
+    .offer-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      .offer-item {
+        width: 400px;
+        position: relative;
+        margin: 0 20px 170px 30px;
+        @include sm {
+          width: 100%;
+          margin: 0 0 170px 0;
+        }
+        img {
+          width: 100%;
+          height: 250px;
+          border-radius: 15px;
+        }
+        .item-content {
+          width: 85%;
+          margin: 0 auto;
+          text-align: center;
+          background: $white;
+          position: absolute;
+          bottom: -100px;
+          left: 50%;
+          transform: translateX(-50%);
+          border-radius: 15px;
+          padding: 10px 20px 30px 20px;
+          box-shadow: 0px 0px 45px 0px rgb(194, 194, 194);
+          @include sm {
+            width: 90%;
+          }
+          h4 {
+            font-size: 20px;
+            color: $pink;
+            margin: 0;
+          }
+          span {
+            color: $black;
+            @include sm {
+              font-size: 13px;
+            }
+          }
+          .fa-chevron-right {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: $pink;
+            transition: 0.3s;
+          }
+        }
+        &:hover .fa-chevron-right {
+          color: $white;
+          background: $pink;
+          padding: 10px 14px;
+          border-radius: 50%;
+          box-sizing: content-box;
+          bottom: -17px;
+        }
+      }
+    }
+    .offer-box-carousel {
+      position: relative;
+      .next,
+      .prev {
+        position: absolute;
+        top: 40%;
+        font-size: 40px;
+        color: $pink;
+      }
+      .next {
+        right: -30px;
+      }
+      .prev {
+        left: -30px;
+      }
+      .carousel-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+          display: flex;
+          justify-content: center;
+        }
+        .offer-item {
+          max-width: 450px;
+          width: 90%;
+          position: relative;
+          margin: 0 0px 170px 0px;
+          img {
+            width: 100%;
+            height: 250px;
+            border-radius: 15px;
+          }
+          .item-content {
+            width: 85%;
+            margin: 0 auto;
+            text-align: center;
+            background: $white;
+            position: absolute;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 15px;
+            padding: 10px 20px 30px 20px;
+            box-shadow: 0px 0px 45px 0px rgb(194, 194, 194);
+            h4 {
+              font-size: 20px;
+              color: $pink;
+              margin: 0;
+            }
+            p {
+              margin: 0;
+              margin-bottom: 10px;
+              color: $grey;
+              font-size: 14px;
+            }
+            span {
+              color: $black;
+            }
+            .fa-chevron-right {
+              position: absolute;
+              bottom: -8px;
+              left: 50%;
+              transform: translateX(-50%);
+              color: $pink;
+              transition: 0.3s;
+            }
+          }
+          &:hover .fa-chevron-right {
+            color: $white;
+            background: $pink;
+            padding: 10px 14px;
+            border-radius: 50%;
+            box-sizing: content-box;
+            bottom: -17px;
+          }
+        }
+      }
+      .carousel-buttons {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          color: $pink;
+          text-transform: uppercase;
+          font-weight: 500;
+          border: 1px solid $pink;
+          width: fit-content;
+          padding: 5px 50px 5px 20px;
+          border-radius: 15px;
+          margin: 10px 0;
+          position: relative;
+          cursor: pointer;
+          .fas {
+            position: absolute;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+            background: $greybg;
+            padding: 10px 12px;
+            border-radius: 50%;
+            transition: 0.3s;
+          }
+          &:hover .fas {
+            background: $pink;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  background: url("../../img/footerbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  margin-top: 200px;
+  padding-top: 65px;
+  position: relative;
+  .wrapper {
+    @include sm {
+      margin: 0;
+    }
+  }
+  @include sm {
+    margin-top: 100px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include sm {
+      flex-direction: column;
+    }
+    .menu {
+      span {
+        margin: 0 30px;
+        color: $white;
+        font-size: 18px;
+        @include sm {
+          margin: 0 5px;
+        }
+        @include md {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+  .footer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background: #a74f4f;
+    padding: 20px;
+    color: $white;
+    @include sm {
+      font-size: 12px;
+      padding: 10px;
+    }
+  }
+}
