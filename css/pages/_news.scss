@@ -45,6 +45,14 @@ main.news-page {
           box-sizing: content-box;
           right: -65px;
         }
+        @include xl {
+          color: $white;
+          background: $pink;
+          padding: 10px 14px;
+          border-radius: 50%;
+          box-sizing: content-box;
+          right: -65px;
+        }
       }
       img {
         width: 250px;

@@ -1,0 +1,72 @@
+main.contact-page {
+  .contact-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include lg {
+      flex-direction: column;
+    }
+    @include md {
+      flex-direction: column;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+    .contact-info {
+      margin-bottom: 50px;
+      @include xl {
+        margin-bottom: 0;
+      }
+      .info-item {
+        display: flex;
+        flex-direction: column;
+        h4,
+        span a {
+          color: $pink;
+        }
+        span a {
+          transition: 0.2s;
+          &:hover {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+    .contact-map {
+      .mapouter {
+        position: relative;
+        text-align: right;
+        height: 350px;
+        width: 900px;
+        iframe {
+          width: 100%;
+          @include md {
+            width: 100%;
+          }
+          @include sm {
+            width: 100%;
+          }
+        }
+        @include md {
+          width: 450px;
+        }
+        @include sm {
+          width: 300px;
+        }
+      }
+
+      .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 350px;
+        width: 900px;
+        @include md {
+          width: 450px;
+        }
+        @include sm {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

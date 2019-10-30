@@ -1,6 +1,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
   .nav-item {
     a {
       font-size: 18px;
@@ -11,8 +14,19 @@
         border: 1px solid $pink;
         border-radius: 30px;
         padding-left: 50px;
+        padding-right: 10px;
         position: relative;
-        margin-left: 10px;
+        width: fit-content;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        @include xl {
+          margin-bottom: 0px;
+          margin-top: 0px;
+          margin-left: 10px;
+        }
+        &:hover {
+          color: $pink;
+        }
         .fa-phone-alt {
           position: absolute;
           top: -8px;
