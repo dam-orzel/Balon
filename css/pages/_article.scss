@@ -33,6 +33,9 @@ main.article-page {
       h4 {
         color: $pink;
         margin: 0;
+        font-family: realistnarrow, sans-serif;
+        font-weight: 700;
+
         @include md {
           margin-top: 0px;
           text-align: center;
