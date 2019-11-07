@@ -68,7 +68,7 @@ main.news-page {
       .news-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+
         padding-left: 20px;
         @include sm {
           padding-left: 0px;
